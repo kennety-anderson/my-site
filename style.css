@@ -1,0 +1,78 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*cabeçalho da pagina com jumbtron com imagem*/
+
+.jumbotron {
+    height: 100% !important;
+    width: 100% !important;
+    margin-bottom: 0;
+    background-image: url(technology-785742_1920.jpeg);
+    background-position: relative;
+    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-size: 300% !important;
+    opacity: 0.7;
+}
+
+h2 {
+    font-size: 280% !important;
+    opacity: 0.7;
+}
+
+
+/* menu de navegação*/
+
+#titulo {
+    padding-top: 9px;
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+#nav {
+    margin-top: 0%;
+}
+
+.nav-link {
+    font-size: 100%;
+    text-transform: uppercase;
+}
+
+
+/* seções da pagina*/
+
+.texto {
+    width: 86%;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+#sobre {
+    padding-top: 7%;
+    text-align: center;
+}
+
+#sobre1 {
+    padding-top: 25px;
+}
+
+/* efeito de scroll da pagina*/
+
+[data-anime] {
+    opacity: 0;
+    transition: .7s;
+}
+
+[data-anime="top"] {
+    transform: translate3d(0px, 80px, 0px);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
