@@ -2,9 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /*cabeçalho da pagina com jumbtron com imagem*/
-
 .jumbotron {
     height: 100% !important;
     width: 100% !important;
@@ -16,9 +14,33 @@ html {
     background-repeat: no-repeat;
 }
 
+/* definir o tamanho maximo da largura do container*/
+.container-fluid {
+    max-width: 560px;
+    margin: auto;
+}
+
+/* criação e animção do cursor */
+#header::after{
+    content: '|';
+    color: white;
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+/* definição dos tamanhos do titulo e subtitulo */
 h1 {
     font-size: 300% !important;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 h2 {
@@ -26,9 +48,7 @@ h2 {
     opacity: 0.7;
 }
 
-
 /* menu de navegação*/
-
 #titulo {
     padding-top: 9px;
     font-size: 100%;
@@ -45,8 +65,7 @@ h2 {
 }
 
 
-/* seções da pagina*/
-
+/* seção sobre da pagina */
 .texto {
     width: 86%;
     margin-left: 7%;
@@ -62,7 +81,6 @@ h2 {
 }
 
 /* efeito de scroll da pagina*/
-
 [data-anime] {
     opacity: 0;
     transition: .7s;
